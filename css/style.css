@@ -48,7 +48,7 @@ a {
     background-image: linear-gradient(#fff, #ffafbd);
     /*background-color: aquamarine;*/
     background-blend-mode: screen;
-    min-height: 98vh;
+    min-height: 100vh;
 }
 #home .page-title {
     text-transform: none;
@@ -69,7 +69,8 @@ a {
 #skill {
     background-image: linear-gradient(#fff, #ffafbd);
     /*background-color: aquamarine;*/
-    background-blend-mode: overlay;
+    background-blend-mode: screen;
+    min-height: 100vh;
 }
 #skill .page-title {
     text-transform: none;
