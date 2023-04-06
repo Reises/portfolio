@@ -1,34 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
     <head>
         <meta charset="utf-8">
         <title>ポートフォリオ</title>
         <meta name="discription" content="テスト">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <!--<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
         <link href="css/style.css" rel="stylesheet">
     </head>
-
     <body>
     <div id="home">
-        <header class="page-header wrapper">
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="skill.html">Skill</a></li>
-                </ul>
-            </nav>
-        </header>
+            <div class="openbtn1">Menu<span></span><span></span><span></span></div>
+                <nav id="g-nav">
+                    <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                    <ul>
+                        <li><a href="#About">About</a></li>  
+                        <li><a href="#skill">スキルについて</a></li>  
+                    </ul>
+                    </div>
+                </nav>
         <div class="home-content wrapper">
             <h2 class="page-title">Ryo Kitagawa's PortFolio!</h2>
-            <p>はじめまして、北川と申します。約2年の間、IT業界でプログラマーとしてお仕事をしていました。<br>
-                入社してから退職するまでの約2年間は、2次元の矩形などを配置して設備の設計図をウェブブラウザ上で作成できるwebシステムの開発を行っていました。<br>
-                1年目は、左右下にあるパネルを表示・非表示を可能にするようなUIの改善や新規機能の開発を行っていました。<br>
-                また、2年目は、過去に開発した機能で内在していた不具合の修正、既存機能の改修、新機能の一部開発を行っていました。<br>
-                開発フェーズは仕様書の作成、開発、テスト(開発担当者および別メンバーが開発した機能)を行っていました。
-            </p>
-            <a class="button" href="skill.html"> スキルを見る</a>
         </div>
     </div>
+    <div id="About">
+        <div class="about-content wrapper">
+            <h2 class="page-title">経歴</h2>
+    <ul class="accordion-area">
+        <li>
+            <section>
+                <h3 class="title">2017年10月～2019年8月株式会社フォーラムエイト</h3>
+                <div class="box">
+                    <p>プログラマーとして1つのプロジェクトに携わっていました。<br>
+                        2次元の矩形などを配置して設備の設計図をウェブブラウザ上で作成できるwebシステムの開発を行っていました。<br>
+                        具体的には、ブラウザのキャンバスとWebGLによる2次元のCADのフロントエンドの開発を行っていました。
+                        1年目は、左右下にあるパネルを表示・非表示にする機能を開発して作図領域を広げるためや利便性向上のためのUIの開発や新規機能の開発を行っていました。<br>
+                        2年目は、過去に開発した機能で内在していた不具合の修正、既存機能の改修、新機能の一部開発を行っていました。<br>
+                        開発フェーズは内部設計（顧客の要求定義が記載された資料を基に仕様書の作成）、開発、テスト(開発担当者および別メンバーが開発した機能)を行っていました。
+                    </p>
+                </div>
+            </section>
+        </li>
+        <li>
+            <section>
+                <h3 class="title">2021年6月～現在:株式会社ユーコム</h3>
+                <div class="box">
+                    <p>ヘルプデスクの業務を行っています。<br>
+                        2次元の矩形などを配置して設備の設計図をウェブブラウザ上で作成できるwebシステムの開発を行っていました。<br>
+                        具体的には、ブラウザのキャンバスとWebGLによる2次元のCADのフロントエンドの開発を行っていました。
+                        1年目は、左右下にあるパネルを表示・非表示にする機能を開発して作図領域を広げるためや利便性向上のためのUIの開発や新規機能の開発を行っていました。<br>
+                        2年目は、過去に開発した機能で内在していた不具合の修正、既存機能の改修、新機能の一部開発を行っていました。<br>
+                        開発フェーズは内部設計（顧客の要求定義が記載された資料を基に仕様書の作成）、開発、テスト(開発担当者および別メンバーが開発した機能)を行っていました。
+                    </p>
+                </div>
+            </section>
+        </li>
+    </ul>
+        </div>
+    </div>
+    <div id="skill">
+        <div class="skill-content wrapper">
+            <h2 class="page-title">スキルについて</h2>
+        </div>
+        <div class="wrapper grid">
+            <div class="item">
+                <h3 class="grid-title">HTML/CSS</h3>
+                <p>htmlはタグ打ちができる程度です。調べながら作成は可能です。
+                CSSはFlexboxを用いたレイアウトを少し理解しています。また、html同様調べながら作成可能です。</p>
+            </div>
+            <div class="item">
+                <h3 class="grid-title">JavaScript</h3>
+                <p>DOM操作については、一通り理解しています。<br>
+                    当サイトのアコーディオンおよびMenuはJavascriptで実装しています。（jquery未使用)
+                    また、EcmaScript2015について、非同期処理以外は理解しています。</p>
+            </div>
+            <div class="item">
+                <h3 class="gird-title">その他</h3>
+                <p>Mercurialを使用していました。comet,push,mergeは理解しています。<br>
+                TortoiseHGというGUIツールを使用していました。</p>
+            </div>
+        </div>
+    </div>
+        <script src="js/globalNavigation.js"></script>
+        <script src="js/accordion.js"></script>
     </body>
 </html>
