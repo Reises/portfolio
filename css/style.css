@@ -243,10 +243,18 @@ a {
 
 /* アコーディオンで現れるエリア */
 .box {
-    display: none; /*はじめは非表示 */
-    background: #f3f3f3;
-    margin: 0 3% 3% 3%;
-    padding: 3%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: #f9f9f9;
+    padding: 0 1rem;
+    border-left: 4px solid #0bd;
+}
+
+/* アコーディオン展開時 */
+.box.open {
+    max-height: 1000px; /* 十分に大きな値にしておく */
+    padding: 1rem;
 }
 
 
@@ -341,3 +349,52 @@ a {
 .button:hover {
     background: #0090aa;
 }
+
+/* スキル欄レスポンシブ対応 */
+@media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+@media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+}
+
+/* PCサイズ以上では常時ナビを表示 */
+@media (min-width: 768px) {
+    #g-nav {
+      position: static !important;
+      opacity: 1 !important;
+      z-index: 1 !important;
+      height: auto !important;
+      background: transparent !important;
+    }
+  
+    /* ナビ全体を中央寄せまたは右寄せ用に調整 */
+    #g-nav-list {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 20px;
+    }
+      
+  
+    #g-nav ul {
+      display: flex !important;
+      gap: 30px;
+      position: static;
+      transform: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #g-nav li {
+      list-style: none;
+    }
+  
+    .openbtn1 {
+      display: none;
+    }
+}  
